@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Prompt Generator — Demo</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>AI Prompt Generator — Creative Content</h1>
+
+    <section class="form">
+      <label>Concept / Product
+        <input id="concept" placeholder="e.g., luxury perfume bottle" />
+      </label>
+
+      <label>Style
+        <select id="style">
+          <option value="photorealistic product photography">Photorealistic product photography</option>
+          <option value="cinematic commercial">Cinematic commercial</option>
+          <option value="editorial fashion">Editorial fashion</option>
+          <option value="3d render">3D render</option>
+        </select>
+      </label>
+
+      <label>Mood
+        <select id="mood">
+          <option>Luxurious</option>
+          <option>Moody</option>
+          <option>Romantic</option>
+          <option>Energetic</option>
+          <option>Tranquil</option>
+        </select>
+      </label>
+
+      <label>Platform / Use
+        <select id="platform">
+          <option value="General">General</option>
+          <option value="Instagram">Instagram (Reels)</option>
+          <option value="TikTok">TikTok</option>
+          <option value="YouTube">YouTube</option>
+          <option value="Print">Print / Ads</option>
+        </select>
+      </label>
+
+      <label>Aspect Ratio
+        <select id="aspect">
+          <option value="16:9">16:9</option>
+          <option value="9:16">9:16</option>
+          <option value="1:1">1:1</option>
+          <option value="4:5">4:5</option>
+        </select>
+      </label>
+
+      <label>Output Type
+        <select id="outputType">
+          <option value="image">Image</option>
+          <option value="video">Video</option>
+        </select>
+      </label>
+
+      <label>Brand details (optional)
+        <input id="brand" placeholder="Brand name, colors, logos, etc." />
+      </label>
+
+      <div class="controls">
+        <button id="generate">Generate Prompt</button>
+        <button id="presetExample">Load Example: Perfume Ad</button>
+      </div>
+    </section>
+
+    <section class="output">
+      <h2>Generated Prompt</h2>
+      <textarea id="result" readonly></textarea>
+      <div class="copyRow">
+        <button id="copyBtn">Copy to Clipboard</button>
+        <button id="downloadBtn">Download .txt</button>
+      </div>
+    </section>
+
+    <section class="presets">
+      <h3>Presets</h3>
+      <ul>
+        <li><button class="preset" data-preset="jewelry">High-end Jewelry Video Ad</button></li>
+        <li><button class="preset" data-preset="watch">Cinematic Watch Product Shot</button></li>
+        <li><button class="preset" data-preset="streetwear">Streetwear Social Reel</button></li>
+      </ul>
+    </section>
+
+    <footer>
+      <small>Static demo — copy prompts into your chosen image/video AI tool.</small>
+    </footer>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
